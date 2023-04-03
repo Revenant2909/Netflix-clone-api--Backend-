@@ -14,7 +14,7 @@ mongoose
             useUnifiedTopology: true,
             // useCreateIndex: true,
         })
-        .then(()=> console.log("DB Connection Successfull"))
+        .then(()=> console.log("DB Connection Successful"))
         .catch((err)=> console.log(err));
         app.use(express.json());
         app.use("/api/auth", authRoute);
